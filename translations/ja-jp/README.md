@@ -1,6 +1,6 @@
-![Generative AI For Beginners](../../images/repository-thumbnail.png?WT.mc_id=academic-105485-yoterada)
+![Generative AI For Beginners](../../images/repository-thumbnail2.png?WT.mc_id=academic-105485-yoterada)
 
-### 生成 AI アプリケーションの開発を始めるために必要な全知識を学べる 12 講座
+### 生成 AI アプリケーションの開発を始めるために必要な全知識を学べる 18 講座
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/Generative-AI-For-Beginners.svg)](https://github.com/microsoft/Generative-AI-For-Beginners/blob/master/LICENSE?WT.mc_id=academic-105485-yoterada)
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/Generative-AI-For-Beginners.svg)](https://GitHub.com/microsoft/Generative-AI-For-Beginners/graphs/contributors/?WT.mc_id=academic-105485-yoterada)
@@ -15,7 +15,7 @@
 [![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=lightgrey&logo=github)](https://codespaces.new/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-yoterada)
 [![](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://aka.ms/genai-discord?WT.mc_id=academic-105485-yoterada)
 
-# 初心者のための生成 AI - コース
+# 初心者のための生成 AI (Version 2) - コース
 
 マイクロソフトのクラウド・アドボケイトが提供する、全 12 回のレッスンを通して、生成 AI アプリケーション構築の基礎知識を身につけましょう。各レッスンで、生成 AI の基礎知識やアプリの実装に必要な重要ポイントをしっかりと理解できるようにします。このコースを通じて、生成 AI スタートアップ企業の創業を題材に、アイデアを形にする過程を実際に体験できます。
 
@@ -71,7 +71,16 @@
 | 10  |       [ローコード AI アプリケーションの構築](../../10-building-low-code-ai-applications/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)       |                                    **Low Code:** Power Platform における生成 AI の概要                                     | 教育系スタートアップ企業がローコードで学生の課題追跡アプリを構築する                                              |
 | 11  |            [Function Calling との統合](../../11-integrating-with-function-calling/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)             |                                 **Code:** Function Calling とアプリケーションにおける用途                                  | 外部 API からデータを取得するため Function Calling を設定する                                                     |
 | 12  |        [AI アプリケーション用の UX デザイン](../../12-designing-ux-for-ai-applications/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)        |                                 **概念:** 透明性と信頼性を備えた AI アプリケーションの設計                                 | 生成 AI アプリケーションの開発時に UX デザインの原則を適用する                                                    |
-| xx  |                                        [学習の継続](https://aka.ms/genai-collection?WT.mc_id=academic-105485-koreyst)                                         |                                        各授業の内容をさらに進めるための参考リンク!                                         | 生成 AI の技術をマスターするために                                                                                |
+| 13  |             [Securing Your Generative AI Applications](../../13-securing-ai-applications/translatioins/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)             |       **Learn:** The threats and risks to AI systems and methods to secure these systems.       | [Learn More](https://aka.ms/genai-collection?WT.mc_id=academic-105485-yoterada) |
+| 14  |      [The Generative AI Application Lifecycle](../../14-the-generative-ai-application-lifecycle/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)      |             **Learn:** The tools and metrics to manage the LLM Lifecycle and LLMOps             | [Learn More](https://aka.ms/genai-collection?WT.mc_id=academic-105485-yoterada) |
+| 15  |    [Retrieval Augmented Generation (RAG) and Vector Databases](../../15-rag-and-vector-databases/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)     | **Build:** An application using a RAG Framework to retrieve embeddings from a Vector Databases  | [Learn More](https://aka.ms/genai-collection?WT.mc_id=academic-105485-yoterada) |
+| 16  |                  [Open Source Models and Hugging Face](../../16-open-source-models/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)                   |          **Build:** An application using open source models available on Hugging Face           | [Learn More](https://aka.ms/genai-collection?WT.mc_id=academic-105485-yoterada) |
+| 17  |                                    [AI Agents](../../17-ai-agents/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)                                    |                      **Build:** An application using an AI Agent Framework                      | [Learn More](https://aka.ms/genai-collection?WT.mc_id=academic-105485-yoterada) |
+| 18  |                               [Fine-Tuning LLMs](../../18-fine-tuning/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoterada)                                |                      **Learn:** The what, why and how of fine-tuning LLMs                       | [Learn More](https://aka.ms/genai-collection?WT.mc_id=academic-105485-yoterada) |
+
+## 🌟 感謝
+
+[**John Aziz**](https://www.linkedin.com/in/john0isaac/) さんに作成して頂いた GitHub Actions や workflows の貢献に感謝しています。
 
 ## 🎒 その他のコース
 
@@ -83,3 +92,4 @@
 - [初心者のための Web Dev](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-yoterada)
 - [初心者のための IoT](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-yoterada)
 - [初心者のための XR Development](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-yoterada)
+- [**NEW** 初心者のためのサーバー・セキュリティ](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-yoterada)
