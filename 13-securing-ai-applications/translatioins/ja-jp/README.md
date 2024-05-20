@@ -1,6 +1,6 @@
 # 生成 AI アプリケーションのセキュリティ
 
-[![Securing Your Generative AI Applications](../../images/13-lesson-banner.jpg?WT.mc_id=academic-105485-yoterada)]
+![Securing Your Generative AI Applications](../../images/13-lesson-banner.jpg?WT.mc_id=academic-105485-yoterada)
 
 ## はじめに  
 
