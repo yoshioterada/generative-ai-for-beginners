@@ -1,4 +1,4 @@
-![Generative AI For Beginners](../../images/repository-thumbnail2.png?WT.mc_id=academic-105485-yoterada)
+![Generative AI For Beginners](../../images/repo-thubmnail2.png?WT.mc_id=academic-105485-yoterada)
 
 ### 生成 AI アプリケーションの開発を始めるために必要な全知識を学べる 18 講座
 
