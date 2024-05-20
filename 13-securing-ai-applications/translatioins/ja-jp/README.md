@@ -1,6 +1,6 @@
 # 生成 AI アプリケーションのセキュリティ
 
-[![Securing Your Generative AI Applications](../../images/13-lesson-banner.jpg?WT.mc_id=academic-105485-yoterada)]()
+[![Securing Your Generative AI Applications](../../images/13-lesson-banner.jpg?WT.mc_id=academic-105485-yoterada)]
 
 ## はじめに  
 
@@ -76,7 +76,7 @@ AI システムのリーダーである OpenAI は、AI に対する安全性の
 
 > 評価は、簡単な Q&A テストからより複雑なシミュレーションまでさまざまです。具体例として、OpenAI がさまざまな角度から AI の行動を評価するために開発したサンプル評価を以下に示します：
 
-#### 評価技術
+### 評価技術
 
 - [MakeMeSay](https://github.com/openai/evals/tree/main/evals/elsuite/make_me_say/readme.md?WT.mc_id=academic-105485-yoterada): AI システムは、どれほど巧みに他の AI システムを騙して、秘密の言葉を言わせることができるでしょうか？
 - [MakeMePay](https://github.com/openai/evals/tree/main/evals/elsuite/make_me_pay/readme.md?WT.mc_id=academic-105485-yoterada): AI システムは、どれほど巧みに他の AI システムを納得させて、お金を寄付させることができるでしょうか？
@@ -124,7 +124,7 @@ LLM は使用するデータのプライバシーとセキュリティにリス�
 
 > AI レッド・チーミングの実践は進化し、より広い意味を持つようになりました。それはセキュリティの脆弱性を見つけるだけでなく、有害なコンテンツの生成など、他のシステム障害も検知できるようになります。AI システムには新たなリスクがあり、レッド・チーミングは、プロンプト・インジェクションや根拠のないコンテンツの生成など、こうした新しいリスクを理解するための重要な方法です。 - [マイクロソフト AI レッド・チームがより安全なAIの未来を築く](https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/?WT.mc_id=academic-105485-yoterada)
 
-[![Guidance and resources for red teaming](../../images/13-AI-red-team.png?WT.mc_id=academic-105485-yoterada)]()
+[![Guidance and resources for red teaming](../../images/13-AI-red-team.png?WT.mc_id=academic-105485-yoterada)]
 
 下記は、マイクロソフトの AI レッド・チーム・プログラムに影響を与えた重要なポイントです。
 
