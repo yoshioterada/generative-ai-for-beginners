@@ -1,85 +1,89 @@
-# The Generative AI Application Lifecycle
+# 生成 AI アプリケーション・ライフサイクル
 
-An important question for all AI applications is the relevance of AI features, as AI is a fast evolving field, to ensure that your application remains relevant, reliable, and robust, you need to monitor, evaluate, and improve it continuously. This is where the generative AI lifecycle comes in.
+すべての AI アプリにとって重要なのは、AI の機能がどれだけ役立つかです。AI は急速に進化しているので、アプリが常に役立ち、信頼でき、そしてしっかりと構築するためには、継続的に監視し、評価し、改善する必要があります。そこで生成 AI のライフサイクルが役立ちます。
 
-The generative AI lifecycle is a framework that guides you through the stages of developing, deploying, and maintaining a generative AI application. It helps you to define your goals, measure your performance, identify your challenges, and implement your solutions. It also helps you to align your application with the ethical and legal standards of your domain and your stakeholders. By following the generative AI lifecycle, you can ensure that your application is always delivering value and satisfying your users.
+生成 AI のライフサイクルは、生成 AI アプリケーションを構築、デプロイ、維持する段階を示す指針です。目標を定め、パフォーマンスを測り、課題を見つけ、解決策を実行するのに役立ちます。さらに、アプリを自分の業界や関係者の倫理や法的基準に合わせるのにも役立ちます。生成AIのライフサイクルに従えば、アプリケーションは常に価値を提供し、ユーザーを満足させます。
 
-## Introduction
+## はじめに
 
-In this chapter, you will:
+この章では、下記の内容を学びます：
 
-- Understand the Paradigm Shift from MLOps to LLMOps
-- The LLM Lifecycle
-- Lifecycle Tooling
-- Lifecycle Metrification and Evaluation
+- MLOps から LLMOps へのパラダイムシフトを理解
+- LLM のライフサイクル
+- ライフサイクルのツール
 
-## Understand the Paradigm Shift from MLOps to LLMOps
+## MLOps から LLMOps へのパラダイムシフトを理解
 
-LLMs are a new tool in the Artificial Intelligence arsenal, they are incredibly powerful in analysis and generation tasks for applications, however this power has some consequences in how we streamline AI and Classic Machine Learning tasks.
+LLM は AI の新しいツールで、アプリケーションの分析や生成タスクにおいて非常に強力です。しかし、この力は AI や従来の機械学習タスクの効率化に影響を及ぼします。
 
-With this, we need a new Paradigm to adapt this tool in a dynamic, with the correct incentives. We can categorize older AI apps as "ML Apps" and newer AI Apps as "GenAI Apps" or just "AI Apps", reflecting the mainstream technology and techniques used at the time. This shifts our narrative in multiple ways, look at the following comparison.
+このツールをうまく使うためには、新しい考え方と適切なやり方が必要です。古い AI アプリは「ML アプリ」、新しい AI アプリは「生成 AI アプリ」または単に「AI アプリ」と呼ばれ、その時代で使われている技術や方法を反映しています。これにより、私たちの考え方がいろいろな面で変わっていきます。以下の比較をご覧ください。」
 
-![LLMOps vs. MLOps comparison](./images/01-llmops-shift.png?WT.mc_id=academic-105485-koreys)
+![LLMOps vs. MLOps comparison](../../images/01-llmops-shift.png?WT.mc_id=academic-105485-yoterada)
 
 Notice that in LLMOps, we are more focused in the App Developers, using integrations as a key point, using "Models-as-a-Service" and thinking in the following points for metrics.
 
-- Quality: Response quality
-- Harm: Responsible AI
-- Honesty: Response groundness (Makes sense? It is correct?)
-- Cost: Solution Budget
-- Latency: Avg. time for token response
+LLMOps では、アプリ開発者に重点を置き、統合を重要なポイントとして「モデル・アズ・ア・サービス」を活用します。メトリクスに関しては、次のポイントを検討します。
 
-## The LLM Lifecycle
+- 品質: 応答の質
+- 有害性: 責任ある AI
+- 誠実さ: 応答の信頼性（意味が通じるか？正しいか？）
+- コスト: ソリューションの予算
+- 遅延: トークン応答の平均時間
 
-First, to understand the lifecycle and the modifications, let's note the next infographic.
+## LLM のライフサイクル
 
-![LLMOps infographic](./images/02-llmops.png?WT.mc_id=academic-105485-koreys)
+まず、ライフサイクルと変更点を理解するために、次の図をご覧ください。
 
-As you may note, this is different from the usual Lifecycles from MLOps. LLMs have many new requirements, as Prompting, different tecniques to improve quality (Fine-Tuning, RAG, Meta-Prompts), different assessment and responsability with responsible AI, lastly, new evaluation metrics (Quality, Harm, Honesty, Cost and Latency).
+![LLMOps infographic](../../images/02-llmops.png?WT.mc_id=academic-105485-yoterada)
 
-For instance, take a look how we ideate. Using prompt engineering to experiment with various LLMs to explore possibilities to tests if their Hypothesis could be correct.
+ご覧のとおり、これは通常の MLOps のライフサイクルとは異なります。LLMには、プロンプト、品質向上のためのさまざまな技術（ファインチューニング、RAG、メタプロンプト）、責任あるAIに関する異なる評価と責任、そして新しい評価指標（品質、有害性、誠実さ、コスト、遅延）など、多くの新しい要件があります。
 
-Note that this is not linear, but integrated loops, iterative and with an overacrching cycle.
+例えば、私たちがどのようにアイデアを出すか見てみましょう。プロンプト・エンジニアリングを利用して、いろいろな LLM で実験し、仮説が正しいかどうかを試してみたいと思います。
 
-How could we explore those steps? Let's step into detail in how could we build a lifecycle.
+これは直線的な流れではなく、全体を包括するサイクルで繰り返し行われる統合されたループです。
 
-![LLMOps Workflow](./images/03-llm-stage-flows.png?WT.mc_id=academic-105485-koreys)
+その手順をどのように調べられるか考えてみましょう。ライフサイクルを作る方法を詳しく見てみましょう。
+
+![LLMOps Workflow](../../images/03-llm-stage-flows.png?WT.mc_id=academic-105485-yoterada)
 
 This may look a bit complicated, lets focus on the three big steps first.
 
-1. Ideating/Exploring: Exploration, here we can explore according to our business needs. Prototyping, creating a [PromptFlow](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-koreyst) and test if is efficient enough for our Hypothesis.
-1. Building/Augmenting: Implementation, now, we start to evaluate for bigger datasets implement techniques, like Fine-tuning and RAG, to check the robustness of out solution. If it does not, re-implementing it, adding new steps in our flow or restructuring the data, might help. After testing our flow and our scale, if it works and check our Metrics, it is ready for the next step.
-1. Operationalizing: Integration, now adding Monitoring and Alerts Systems to our system, deployment and application integration to our Application.
+少し複雑に見えるかもしれないため、まずは3つの大きなステップに注目しましょう。
 
-Then, we have the overarching cycle of Management, focusing on security, compliance and governance.
+1. アイデアを検討/探求: ここではビジネスのニーズに合わせて探求できます。プロトタイプを作成し、[PromptFlow](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-yoteradat)を作成して、仮説に対して十分効率的かどうかテストします。
+1. ビルド/拡張: 実装、ここでは大きなデータセットに対してファインチューニングや RAG のような技術を使って、解決策の堅牢性を確認します。仮にうまくいかない場合は、フローに新しいステップを追加したり、データを再構築したりして再実装することで改善できるかもしれません。フローとスケールをテストし、動作してメトリクスを確認すると、次のステップに進めます。
+1. 運用化: 統合、システムにモニタリングとアラートシステムを追加し、アプリケーションにデプロイと統合を行います。
 
-Congratulations, now you have your AI App ready to go and operational. For a hands on experience, take a look on the [Contoso Chat Demo.](https://nitya.github.io/contoso-chat/?WT.mc_id=academic-105485-koreys)
+次に、セキュリティ、コンプライアンス、ガバナンスに焦点を当てた全体的な管理サイクルがあります。
 
-Now, what tools could we use?
+おめでとうございます、これで AI アプリの準備が整いました。実際に試してみたい場合は、[Contoso Chat Demo](https://nitya.github.io/contoso-chat/?WT.mc_id=academic-105485-yoterada) をご覧ください。
 
-## Lifecycle Tooling
+次に、どのようなツールを利用できるか確認してみましょう。
 
-For Tooling, Microsoft provides the [Azure AI Platform](https://azure.microsoft.com/solutions/ai/?WT.mc_id=academic-105485-koreys) and [PromptFlow](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-koreyst) facilitate and make your cycle easy to implement and ready to go.
+## ライフサイクルのツール
 
-The [Azure AI Platform](https://azure.microsoft.com/solutions/ai/?WT.mc_id=academic-105485-koreys), allows you to use [AI Studio](https://ai.azure.com/?WT.mc_id=academic-105485-koreys). AI Studio is a web portal allows you to Explore models, samples and tools. Managing your resources, UI development flows and SDK/CLI options for Code-First development.
+ツールとして、Microsoftは [Azure AI Platform](https://azure.microsoft.com/solutions/ai/?WT.mc_id=academic-105485-yoterada) と [PromptFlow](https://microsoft.github.io/promptflow/index.html?WT.mc_id=academic-105485-yoteradat) を提供しており、これらのツールはサイクルの実装を簡単にし、すぐに使えます。
 
-![Azure AI possibilities](./images/04-azure-ai-platform.png?WT.mc_id=academic-105485-koreys)
+[Azure AI Platform](https://azure.microsoft.com/solutions/ai/?WT.mc_id=academic-105485-yoterada)では[AI Studio](https://ai.azure.com/?WT.mc_id=academic-105485-yoterada)を利用できます。AI Studio はウェブポータルで、モデル、サンプル、ツールを検索できます。リソースの管理、UI開発フロー、コードファースト開発のための SDK や CLI もオプションで提供しています。
 
-Azure AI, allows you to use multiple resources, to manage your operations, services, projects, vector search and databases needs.
+![Azure AI possibilities](../../images/04-azure-ai-platform.png?WT.mc_id=academic-105485-yoterada)
 
-![LLMOps with Azure AI](./images/05-llm-azure-ai-prompt.png?WT.mc_id=academic-105485-koreys)
+Azure AIを使うと、複数のリソースを利用して、運用、サービス、プロジェクト、ベクター検索、データベースのニーズを管理できます。
 
-Construct, from Proof-of-Concept(POC) until large scale applications with PromptFlow:
+![LLMOps with Azure AI](../../images/05-llm-azure-ai-prompt.png?WT.mc_id=academic-105485-yoterada)
 
-- Design and Build apps from VS Code, with visual and functional tools
-- Test and fine-tune your apps for quality AI, with ease.
-- Use Azure AI Studio to Integrate and Iterate with cloud, Push and Deploy for quick integration.
+PromptFlow を利用して、概念実証（POC）から大規模アプリケーションまで構築しましょう。
 
-![LLMOps with PromptFlow](./images/06-llm-promptflow.png?WT.mc_id=academic-105485-koreys)
+- VS Code を使い、視覚的で機能的なツールを使いアプリを設計し、実装
+- 簡単にアプリのテストとファインチューニング（微調整）を行い、高品質な AI アプリを実装
+- Azure AI Studioを使ってクラウドと連携したり、素早く統合するためのプッシュやデプロイを行う
 
-## Great! Continue your Learning!
+![LLMOps with PromptFlow](../../images/06-llm-promptflow.png?WT.mc_id=academic-105485-yoterada)
 
-Amazing, now learn more how we structure an application to use the concepts with the [Contoso Chat App](https://nitya.github.io/contoso-chat/?WT.mc_id=academic-105485-koreyst), to check how Cloud Advocacy adds those concepts in demonstations. For more content, check our [Ignite breakout session!
-](https://www.youtube.com/watch?v=DdOylyrTOWg)
+## お疲れ様でした!　学習を続ける
 
-Now, check Lesson 15, to understand how [Retrieval Augmented Generation and Vector Databases](../15-rag-and-vector-databases/README.md?WT.mc_id=academic-105485-koreyst) impact Generative AI and to make more engaging Applications!
+素晴らしいです。次は [Contoso Chat App](https://nitya.github.io/contoso-chat/?WT.mc_id=academic-105485-yoteradat) を使用して、アプリケーションの構造と概念の使い方を学びましょう。クラウド・アドボケイトがデモでどのようにそれらの概念を追加していくのか確認してください。さらに詳しい内容は、[Igniteのブレイクアウトセッション](https://www.youtube.com/watch?v=DdOylyrTOWg)をご覧ください。
+
+Now, check Lesson 15, to understand how [Retrieval Augmented Generation and Vector Databases](../../../15-rag-and-vector-databases/translations/ja-jp/README.md?WT.mc_id=academic-105485-yoteradat) impact Generative AI and to make more engaging Applications!
+
+続いて、レッスン 15 を確認し、[RAG (Retrieval Augmented Generation) と ベクトル・データベース]が生成 AI にどのような影響を与え、より魅力的なアプリケーションを作れるかヒントを学びましょう！
