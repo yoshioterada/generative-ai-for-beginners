@@ -124,7 +124,7 @@ LLM は使用するデータのプライバシーとセキュリティにリス�
 
 > AI レッド・チーミングの実践は進化し、より広い意味を持つようになりました。それはセキュリティの脆弱性を見つけるだけでなく、有害なコンテンツの生成など、他のシステム障害も検知できるようになります。AI システムには新たなリスクがあり、レッド・チーミングは、プロンプト・インジェクションや根拠のないコンテンツの生成など、こうした新しいリスクを理解するための重要な方法です。 - [マイクロソフト AI レッド・チームがより安全なAIの未来を築く](https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/?WT.mc_id=academic-105485-yoterada)
 
-[![Guidance and resources for red teaming](./images/13-AI-red-team.png?WT.mc_id=academic-105485-yoterada)]()
+[![Guidance and resources for red teaming](../../images/13-AI-red-team.png?WT.mc_id=academic-105485-yoterada)]()
 
 下記は、マイクロソフトの AI レッド・チーム・プログラムに影響を与えた重要なポイントです。
 
